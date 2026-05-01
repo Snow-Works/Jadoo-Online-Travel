@@ -20,7 +20,7 @@ body {
 .hero {
   position: relative; /* Essential: keeps the shape inside the hero */
   width: 100%;
-  min-height: auto;
+  min-height: 100vh;
   overflow: hidden; /* This crops the image so it doesn't create a scrollbar */
 }
 
