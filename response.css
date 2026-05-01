@@ -1,4 +1,48 @@
-/* ============================================================
+/* overflow-fix.css — Jadoo Travel. Pasted these rules into the TOP of the responsiveness.css,replacing the existing GLOBAL BASE section.
+   */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+html {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+}
+
+h1 {
+  max-width: 100%;
+}
+
+body.nav-open {
+  overflow: hidden !important;
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+.mobile-nav {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+.nav-overlay {
+  width: 100vw;
+  max-width: 100vw;
+  overflow: hidden;
+}
+
+/* 
    responsiveness.css — Jadoo Travel
    Built from exact HTML class names in index.html.
    Arrangement: your style (small → large, bracketed bands).
@@ -14,11 +58,9 @@
 
    Global base (no query): structural bug fixes that apply
    at every screen size.
-   ============================================================ */
+  */
 
-/* ============================================================
-   GLOBAL BASE — runs at every screen size
-   ============================================================ */
+/* GLOBAL BASE — runs at every screen size */
 
 *,
 *::before,
