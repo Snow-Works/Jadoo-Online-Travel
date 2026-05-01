@@ -1,0 +1,290 @@
+/* HAMBURGER BUTTON (it doesn't appear on desktop; shown on mobile via media query */
+
+.hamburger {
+  display: none; /* Hidden on desktop */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 8px;
+  transition: background 0.2s ease;
+  z-index: 999;
+  margin-left: auto; /* Pushes it to the far right of nav */
+}
+
+.hamburger:hover {
+  background: rgba(94, 98, 130, 0.08);
+}
+
+/* The three bars */
+.ham-bar {
+  display: block;
+  width: 24px;
+  height: 2.5px;
+  background: #212832;
+  border-radius: 3px;
+  transition:
+    transform 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.25s ease,
+    width 0.25s ease;
+  transform-origin: center;
+}
+
+/* HAMBURGER OPEN STATE (JS toggles .is-open on the button)_ */
+
+.hamburger.is-open .ham-bar--top {
+  transform: translateY(7.5px) rotate(45deg);
+}
+
+.hamburger.is-open .ham-bar--mid {
+  opacity: 0;
+  width: 0;
+}
+
+.hamburger.is-open .ham-bar--bot {
+  transform: translateY(-7.5px) rotate(-45deg);
+}
+
+/*  OVERLAY BACKDROP */
+
+.nav-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(20, 24, 62, 0.45);
+  backdrop-filter: blur(3px);
+  z-index: 999;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.nav-overlay.is-visible {
+  display: block;
+  opacity: 1;
+}
+
+/* MOBILE NAV DRAWER ( Slides in from the right)  */
+
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: min(310px, 80vw); /* Never wider than 88% viewport on tiny phones */
+  height: 100dvh;
+  background: #fffffff6;
+  backdrop-filter: calc(20px) blur;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  padding: 1.2rem 1.4rem 1.5rem;
+  transform: translateX(100%); /* Off-screen by default */
+  transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0px 10px 20px rgba(20, 24, 62, 0.14);
+  overflow-y: auto;
+}
+
+.mobile-nav.is-open {
+  transform: translateX(0); /* Slides in */
+}
+
+/*BUTTON (the button that closes it ) */
+
+.mobile-nav__close {
+  align-self: flex-end;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #5e6282;
+  padding: 4px;
+  border-radius: 8px;
+  transition:
+    color 0.2s ease,
+    background 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.2rem;
+}
+
+.mobile-nav__close:hover {
+  color: #14183e;
+  background: rgba(94, 98, 130, 0.08);
+}
+
+/*  BRAND LOGO IN DRAWER */
+
+.mobile-nav__brand {
+  margin-bottom: 1rem;
+}
+
+.mobile-nav__brand img {
+  height: 2rem;
+}
+
+/* nav links for mobile screen sizes*/
+
+.mobile-nav__links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  flex: 1;
+}
+
+.mobile-nav__link {
+  display: block;
+  padding: 0.85rem 1rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #212832;
+  text-decoration: none;
+  border-radius: 10px;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    padding-left 0.2s ease;
+  position: relative;
+}
+
+.mobile-nav__link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%) scaleY(0);
+  width: 3px;
+  height: 60%;
+  background: #f1a501;
+  border-radius: 3px;
+  transition: transform 0.2s ease;
+}
+
+.mobile-nav__link:hover {
+  background: rgba(241, 165, 1, 0.08);
+  color: #f1a501;
+  padding-left: 1.4rem;
+}
+
+.mobile-nav__link:hover::before {
+  transform: translateY(-50%) scaleY(1);
+}
+
+/* CTA button (contains the sign up button in mobile nav bar) */
+
+.mobile-nav__cta {
+  margin-top: 1.8rem;
+}
+
+.mobile-nav__signup-btn {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 0.9rem 1rem;
+  background: linear-gradient(135deg, #f1a501 0%, #df6951 100%);
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 10px;
+  transition:
+    box-shadow 0.25s ease,
+    transform 0.2s ease;
+}
+
+.mobile-nav__signup-btn:hover {
+  box-shadow: 0 8px 20px rgba(241, 165, 1, 0.35);
+  transform: translateY(-1px);
+}
+
+/* LANGUAGE SELECTOR (language option in the mobile nav bar) */
+
+.mobile-nav__lang {
+  margin-top: 1.2rem;
+}
+
+.mobile-nav__lang select {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  border: 1.5px solid #e0e0eb;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.88rem;
+  color: #5e6282;
+  background: #f9f9fb05;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.mobile-nav__lang select:focus {
+  border-color: #f1a501;
+}
+
+/* SHOW HAMBURGER RESPONSIVENESS ( on mobile screen sizes) */
+
+@media (max-width: 767px) {
+  /* Show hamburger button */
+  .hamburger {
+    display: flex;
+  }
+
+  /* Hiding the  desktop nav elements */
+  .nav-links,
+  .nav-btn {
+    display: none;
+  }
+}
+
+/*  ACCESSIBILITY: Prevent body scroll when menu is open JS adds .nav-open to <body> */
+body.nav-open {
+  overflow: hidden;
+}
+
+/* ANIMATION: stagger nav links on open */
+
+.mobile-nav__links li {
+  opacity: 0;
+  transform: translateX(20px);
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+.mobile-nav.is-open .mobile-nav__links li:nth-child(1) {
+  opacity: 1;
+  transform: none;
+  transition-delay: 1s;
+}
+.mobile-nav.is-open .mobile-nav__links li:nth-child(2) {
+  opacity: 1;
+  transform: none;
+  transition-delay: 1s;
+}
+.mobile-nav.is-open .mobile-nav__links li:nth-child(3) {
+  opacity: 1;
+  transform: none;
+  transition-delay: 1s;
+}
+.mobile-nav.is-open .mobile-nav__links li:nth-child(4) {
+  opacity: 1;
+  transform: none;
+  transition-delay: 1s;
+}
+.mobile-nav.is-open .mobile-nav__links li:nth-child(5) {
+  opacity: 1;
+  transform: none;
+  transition-delay: 0.22s;
+}
+.mobile-nav.is-open .mobile-nav__links li:nth-child(6) {
+  opacity: 1;
+  transform: none;
+  transition-delay: 0.26s;
+}

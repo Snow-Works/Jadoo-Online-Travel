@@ -1,0 +1,86 @@
+.testimonialsection {
+  margin-top: 5.5rem;
+}
+
+.testcontainer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 3.5rem;
+  transition: 3s ease-in-out;
+  gap: 10rem;
+}
+
+.testcol1 {
+  width: 26rem;
+  transition: 1s;
+}
+
+.testcol1:hover {
+  cursor: pointer;
+}
+
+.test-heading {
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #5e6282;
+  margin: 10px;
+}
+
+.test-title h2 {
+  font-weight: 700;
+  font-size: 3.2rem;
+  color: #14183e;
+}
+
+/*the part that contains the supposed three dots loading ...*/
+
+.testcol1dots {
+  margin-top: 60px;
+}
+
+/*the second half of testimonial section containing the cards */
+
+.testcolcard {
+  width: 32rem;
+  height: 16rem;
+  background: #ffffff;
+  border: 2px;
+  border-radius: 30px;
+  box-shadow: 0 0 10px #f8f9fc;
+  transition: transform 0.5s ease;
+}
+
+.testcolcard:hover {
+  cursor: pointer;
+  box-shadow: 0 8px 16px #5e62826d;
+  transition: 2s;
+}
+
+.testcol2img {
+  position: absolute;
+  right: 600px;
+  align-items: center;
+  z-index: 5;
+  background: linear-gradient(201.65deg, #e4e5ed 17.15%, #a7a7a9 85.18%);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.col2write {
+  padding: 45px;
+}
+
+#col2con {
+  text-align: justify;
+  text-wrap: inherit;
+  overflow: auto;
+}
+
+#col2writetitle {
+  font-weight: 600;
+  padding-top: 80px;
+}

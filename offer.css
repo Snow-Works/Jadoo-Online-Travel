@@ -1,0 +1,129 @@
+/* Offer section part */
+
+.background-stars {
+  position: absolute;
+  right: 0; /* Moves it to the right side */
+  z-index: -1; /* Places it behind your text and planes */
+
+  /* Styling the shape */
+  width: 9.6rem; /* Adjust based on how much of the screen it should cover */
+  height: 9.4rem;
+  background-image: url("images/Group 4.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left center;
+  margin-top: 0rem;
+  margin-right: 2rem;
+  opacity: 1;
+}
+
+.offer-section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3.1rem;
+  transition: 2s ease-in-out;
+}
+
+.offer-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  width: 100%;
+}
+
+.section-title {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #5e6282;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.section-reason {
+  color: #14183e;
+  font-weight: 700;
+  font-size: 3.1rem;
+  margin-top: 1rem;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: 0%;
+}
+
+.section-cards {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  gap: 2.5rem;
+}
+
+.offer-cards1 {
+  display: flex;
+  background: #ffff;
+  height: 20rem;
+  width: 18rem;
+  border-radius: 30px;
+  box-shadow: 0 0 6px #f8f9fc;
+  transition: transform 0.5s ease;
+}
+
+.offer-cards1:hover {
+  cursor: pointer;
+  scale: calc(1.1);
+  transform: translateY(-10px);
+  transition: 1s;
+  box-shadow: 0 10px 20px #5e62826d;
+}
+
+.col-1 {
+  width: 11.88rem;
+  height: 14.19rem;
+  text-align: center;
+  align-items: center;
+  position: relative;
+}
+.col-1 img {
+  margin-top: 35px;
+  margin-left: 35px;
+}
+
+.card-reason {
+  text-align: center;
+  width: 100%;
+  margin-top: 15px;
+  margin-left: 31px;
+}
+
+.col-1 #col1-p {
+  overflow-x: hidden;
+  width: 100%;
+  margin-top: 12px;
+  margin-left: 30px;
+  margin-bottom: 15px;
+  color: #5e6282;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0%;
+}
+
+/*the triangular vector at the back ground*/
+
+.background-vector {
+  position: absolute;
+  left: 0; /* Moves it to the right side */
+  z-index: -1; /* Places it behind your text and planes */
+
+  /* Styling the shape */
+  width: 5.6rem; /* Adjust based on how much of the screen it should cover */
+  height: 10.4rem;
+  background-image: url("images/Rectangle 157 (1).svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right center;
+  margin-top: 15rem;
+  margin-left: 23rem;
+  opacity: 1;
+}

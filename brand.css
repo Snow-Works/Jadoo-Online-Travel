@@ -1,0 +1,112 @@
+.brandsection {
+  margin: 3.2rem;
+  transition: 3s ease-out;
+}
+
+.brandcontainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  text-align: center;
+}
+
+/*brand logos alignment and responsiveness */
+
+/* the first brand*/
+
+.brandcol1img img {
+  background: #ffff;
+  box-shadow: 0 0 12px #f8f9fc;
+  border-radius: 30px;
+  border: 2px;
+  height: 100px;
+  width: 160px;
+  padding: 1px;
+}
+
+.brandcol1img img:hover {
+  cursor: grab;
+  box-shadow: 0 8px 16px #5e62826d;
+  transition: 1s ease-in;
+  transform: translateY(-10px);
+}
+
+/* the second brand*/
+
+.brandcol2img img {
+  padding-top: 18px;
+  background: #ffff;
+  border: 2px;
+  box-shadow: 0 0 12px #f8f9fc;
+  height: 100px;
+  width: 160px;
+  padding: 1px;
+  border-radius: 30px;
+}
+
+.brandcol2img img:hover {
+  cursor: grab;
+  box-shadow: 0 8px 16px #5e62826d;
+  transition: 1s ease-in;
+  transform: translateY(-10px);
+}
+
+/* the third brand*/
+
+.brandcol3img img {
+  padding-bottom: 20px;
+  background: #ffff;
+  border: 2px;
+  box-shadow: 0 0 12px #f8f9fc;
+  height: 100px;
+  width: 160px;
+  padding: 1px;
+  border-radius: 30px;
+}
+
+.brandcol3img img:hover {
+  cursor: grab;
+  box-shadow: 0 8px 16px #5e62826d;
+  transition: 1s ease-in;
+  transform: translateY(-10px);
+}
+
+/* the fourth brand*/
+
+.brandcol4img img {
+  padding-top: 65px;
+  background: #ffff;
+  border: 2px;
+  box-shadow: 0 0 12px #f8f9fc;
+  height: 100px;
+  width: 160px;
+  padding: 2px;
+  border-radius: 30px;
+}
+
+.brandcol4img img:hover {
+  cursor: grab;
+  box-shadow: 0 8px 16px #5e62826d;
+  transition: 1s ease-in;
+  transform: translateY(-10px);
+}
+
+/* the fifth brand*/
+
+.brandcol5 img {
+  padding-top: 70px;
+  background: #ffff;
+  border: 2px;
+  box-shadow: 0 0 12px #f8f9fc;
+  height: 100px;
+  width: 160px;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+.brandcol5 img:hover {
+  cursor: grab;
+  box-shadow: 0 8px 16px #5e62826d;
+  transition: 1s ease-in;
+  transform: translateY(-10px);
+}

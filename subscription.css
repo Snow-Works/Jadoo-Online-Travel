@@ -1,0 +1,207 @@
+.subscribe-section {
+  padding: 100px 8%;
+  position: relative;
+  transition: 3s ease-in-out;
+
+  .subscribe-container {
+    position: relative;
+    background: #dfd7f9;
+    border-radius: 100px 100px 20px 20px;
+    padding: 80px 50px;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .subscribe-container h3 {
+    font-weight: 600;
+    font-size: 2.1rem;
+    color: #14183e;
+    line-height: 54px;
+    letter-spacing: 0%;
+    max-width: 860px;
+    margin: 0 auto 50px auto;
+    position: relative;
+    z-index: 2;
+  }
+
+  /* --- The Form Layout --- */
+
+  .subscribe-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .input-group {
+    position: relative;
+    background: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    width: 420px;
+    height: 68px;
+  }
+
+  .input-group:hover {
+    cursor: pointer;
+    scale: calc(1.01);
+  }
+
+  .mail-icon {
+    color: #39425d;
+    margin-right: 15px;
+    font-size: 20px;
+  }
+
+  .input-group input {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .subscribe-form button {
+    background: linear-gradient(180deg, #ff946d 0%, #ff7d68 100%);
+    color: white;
+    border: none;
+    padding: 0 45px;
+    height: 68px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 2s;
+  }
+
+  .subscribe-form button:hover {
+    background: #df5317;
+    color: white;
+    font-weight: 600;
+    box-shadow: 0 0 15px #eb8879;
+    scale: calc(1.05);
+    cursor: pointer;
+    transition: 1s;
+  }
+
+  /* --- Decorative Elements --- */
+  .telegram-icon {
+    position: absolute;
+    right: 25px;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(201.65deg, #747def 17.15%, #5e3be1 85.18%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+  }
+
+  .telegram-icon:hover {
+    cursor: pointer;
+    background: transparent;
+    box-shadow: 0 8px 16px #5e62826d;
+    border-radius: 15px;
+    transition: 2s ease-in-out;
+    transform: rotateY(360deg);
+  }
+
+  .circles-left,
+  .circles-right {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #6346e56d;
+    border-radius: 50%;
+    z-index: 1;
+  }
+
+  .circles-left {
+    bottom: -100px;
+    left: -50px;
+  }
+  .circles-right {
+    top: -50px;
+    right: -50px;
+  }
+
+  .circles-left1,
+  .circles-right2 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #6346e57a;
+    border-radius: 50%;
+    z-index: 1;
+  }
+
+  .circles-left1 {
+    bottom: -110px;
+    left: -60px;
+  }
+
+  .circles-right2 {
+    top: -60px;
+    right: -60px;
+  }
+
+  .circles-left3,
+  .circles-right4 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #6346e56a;
+    border-radius: 50%;
+    z-index: 1;
+  }
+
+  .circles-left3 {
+    bottom: -130px;
+    left: -70px;
+  }
+
+  .circles-right4 {
+    top: -120px;
+    right: -95px;
+  }
+
+  .circles-left5,
+  .circles-right6 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #6346e563;
+    border-radius: 50%;
+    z-index: 1;
+  }
+
+  .circles-left5 {
+    bottom: -85px;
+    left: -40px;
+  }
+
+  .circles-right6 {
+    top: -75px;
+    right: -85px;
+  }
+
+  .plus-pattern {
+    position: absolute;
+    bottom: -40px;
+    right: -40px;
+    width: 150px;
+    height: 190px;
+    background-image: url("images/Group 4.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left center;
+    margin-top: 0rem;
+    margin-right: 4rem;
+    opacity: 1;
+    z-index: -1;
+  }
+}

@@ -1,0 +1,375 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+body {
+  background-color: #ffffff;
+  color: black;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.hero {
+  position: relative; /* Essential: keeps the shape inside the hero */
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden; /* This crops the image so it doesn't create a scrollbar */
+}
+
+.background-shape {
+  position: absolute;
+  top: 0;
+  right: 0; /* Moves it to the right side */
+  z-index: -1; /* Places it behind your text and planes */
+
+  /* Styling the shape */
+  width: 50%; /* Adjust based on how much of the screen it should cover */
+  height: 100%;
+  background-image: url("images/Decore.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left center;
+}
+
+nav {
+  width: 100%;
+  height: 3.5rem;
+  padding: 2.5rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: nowrap;
+  position: sticky;
+  z-index: 100;
+  gap: 1rem;
+}
+
+.logo {
+  margin-right: auto;
+}
+
+.logo img {
+  width: 6rem;
+  height: 2.5rem;
+  cursor: crosshair;
+}
+
+.nav-links {
+  display: flex;
+  list-style-type: none;
+  gap: 5.5rem;
+  margin-top: 0.8rem;
+  margin-right: 9rem;
+  margin-bottom: 0.3rem;
+  position: sticky;
+}
+
+.nav-links a {
+  position: relative;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-decoration: none;
+  color: #212832;
+  transition: 0.3s;
+  gap: 10rem;
+  position: sticky;
+}
+
+.nav-links a:hover {
+  color: #f9a824;
+  text-shadow: 0 0 15px #fff1da;
+}
+
+.nav-btn {
+  display: flex;
+  margin-top: 0.8rem;
+}
+
+.nav-btn li {
+  list-style-type: none;
+  margin-top: 0.5rem;
+}
+
+.nav-btn li a {
+  text-decoration: none;
+}
+
+.sign-btn {
+  border-radius: 0.3rem;
+  border: 1px dashed #212832;
+  background: transparent;
+  padding: 0.5rem;
+  font-family: sans-serif;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #212832;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-left: 8px;
+  margin-bottom: 5px;
+}
+
+.sign-btn a {
+  text-decoration: none;
+}
+
+.sign-btn:hover {
+  background: #fab74c;
+  color: #ffff;
+  font-weight: 500;
+  box-shadow: 0 0 15px #f9a824;
+  border: none;
+  transition: 0.3s;
+}
+
+.slct {
+  margin-right: 15px;
+  background: transparent;
+}
+
+select {
+  font-family: sans-serif;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #212832;
+  border: none;
+  background: transparent;
+  padding: 0.5px;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+option {
+  background: transparent;
+}
+
+/* this the part that carries the hero section write up, the areoplane svg and the traveler picture8*/
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  z-index: 2;
+  margin-left: 1.3rem;
+}
+
+/* Left Side write up */
+.hero-content {
+  flex: 3;
+  max-width: 450px;
+  margin-left: 1.3rem;
+}
+
+.tagline {
+  color: #df6951;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+h1 {
+  font-size: 70px;
+  color: #181e4b;
+  font-weight: 700;
+  font-size: 4.7rem;
+  line-height: 5rem;
+  letter-spacing: -2%;
+  width: 32.8rem;
+  margin-bottom: 25px;
+}
+
+.accent {
+  position: relative;
+  color: #181e4b;
+}
+
+/* The red brush stroke under 'enjoy' */
+.accent::after {
+  content: "";
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background: #df6951;
+  z-index: -1;
+  transform: rotate(4deg);
+  border-radius: 10px;
+}
+
+.desc {
+  font-family: poppins;
+  color: #5e6282;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* Right Side - Image (the traveler image) Positioning */
+.hero-image {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main-img {
+  width: 100%;
+  max-width: 600px;
+  z-index: 3;
+  margin-right: 0.8rem;
+}
+
+/* Absolute Positioning for Background & Planes */
+.bg-shape {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45%;
+  height: 100%;
+  background: #fff1da; /* The beige color */
+  border-bottom-left-radius: 30% 50%;
+  z-index: 1;
+}
+
+/* aeroplane SVG's on the hero section */
+
+.plane {
+  position: absolute;
+  width: 60px;
+  z-index: 4;
+}
+
+.plane-1 {
+  top: 10%;
+  left: 15%;
+  width: 7.2rem;
+  transform: rotate(-10deg);
+
+  /*applying the keyframe to our plane icon so that it will fly*/
+
+  transform: rotate(-20deg); /* Base rotation */
+
+  /* Applying the animation */
+  animation: fly 15s ease-in-out infinite;
+}
+
+.plane-2 {
+  top: 5%;
+  right: 1.5%;
+  width: 8.6em;
+  z-index: -1;
+  transform: rotate(8deg);
+
+  /*applying the keyframe to our plane icon so that it will fly*/
+
+  transform: rotate(-40deg); /* Base rotation */
+
+  /* Applying the animation */
+  animation: fly 10s ease-in-out infinite;
+}
+
+/* keyframe for our plane icons to actually fly on the screen  */
+
+@keyframes fly {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(45px, -30px) rotate(2deg);
+  }
+  50% {
+    transform: translate(80px, 0px) rotate(0deg);
+  }
+  75% {
+    transform: translate(45px, 30px) rotate(-2deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+
+/* hero section Buttons  */
+
+.btn-orange {
+  background: #f1a501;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.btn-orange:hover {
+  background: #d78500;
+  color: white;
+  font-weight: 600;
+  box-shadow: 0 0 15px #f9a724d2;
+  scale: calc(1.2);
+  cursor: pointer;
+}
+
+.cta-group {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+/* the play demo button that is on the hero section*/
+
+.play-demo {
+  background: #fff4e3;
+  padding: 8px 15px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.play-icon {
+  text-align: center;
+  align-items: center;
+  padding: 0.2rem;
+  background: #df6951;
+  color: #ffff;
+  height: 1.9rem;
+  width: 1.9rem;
+  border-radius: 50%;
+}
+
+.play-demo span {
+  font-weight: 500;
+  font-size: 0.8rem;
+  margin-left: 0.3rem;
+}
+
+.play-demo:hover {
+  scale: calc(1.2);
+  cursor: pointer;
+}
+
+.play-icon:hover {
+  cursor: pointer;
+  background: #f45333;
+  transition: 0.5s;
+}
+
+/*  RESPONSIVE NESS FOR ALL SCREEN SIZES */

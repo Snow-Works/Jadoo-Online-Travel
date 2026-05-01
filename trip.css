@@ -1,0 +1,267 @@
+.trip-section {
+  display: flex;
+  justify-content: center;
+  margin: 3.1rem;
+  transition: 3s step-start;
+  gap: 10rem;
+}
+
+.trip-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* the blue back drop background at the back of the trip section side */
+
+.bluebackdrop {
+  height: 200px;
+  width: 200px;
+  background: #59b1e6;
+  border-radius: 50%;
+  backdrop-filter: blur;
+  filter: blur(45px);
+  top: 330%;
+  right: 80px;
+  opacity: 1.5;
+  z-index: -1;
+  position: absolute;
+  transform: translateY(-50%); /* Fine-tunes vertical center */
+  transform: translateX();
+}
+
+/* first column side of the trip section part */
+
+.cl-3 {
+  width: 30.94rem;
+}
+
+.cl-3 h4 {
+  font-weight: 600;
+  font-size: 1.13rem;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #5e6282;
+  margin-bottom: 1rem;
+}
+
+.cl-3 h2 {
+  font-weight: 700;
+  font-size: 3.13rem;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #14183e;
+}
+
+/* the section of the trip that carries the 3 trip icons on the left side */
+
+.icn-info {
+  width: 24.7rem;
+  height: 18rem;
+}
+
+.icn3 {
+  display: flex;
+  gap: 1.05rem;
+  padding-top: 50px;
+}
+
+.icn3-img img {
+  width: 2.93rem;
+  height: 3rem;
+}
+
+.icn3-img img:hover {
+  cursor: pointer;
+  scale: calc(1.08);
+  transition: 1s;
+  box-shadow: 0 5px 10px #84829a;
+  border-radius: 50%;
+}
+
+.icn3-title {
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 125%;
+  letter-spacing: 0%;
+  color: #5e6282;
+}
+
+.icn3-content {
+  font-weight: 400;
+  font-size: 0.98rem;
+  line-height: 125%;
+  letter-spacing: 0%;
+  color: #84829a;
+}
+
+.cl-4 {
+  display: flex;
+}
+
+.cl-4-card {
+  width: 23.13rem;
+  height: 30rem;
+  background: #ffffff;
+  border: 2px;
+  border-radius: 30px;
+  box-shadow: 0 0 10px #f8f9fc;
+  transition: transform 0.5s ease;
+}
+
+.cl-4-card:hover {
+  scale: calc(1.001);
+  box-shadow: 0 8px 16px #5e62826d;
+}
+
+.cl4-img img {
+  display: flex;
+  justify-content: center;
+  margin-left: 20px;
+  margin-top: 1rem;
+  object-fit: contain;
+}
+
+.img-title {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #080809;
+  line-height: 125%;
+  letter-spacing: 1.5%;
+  margin-top: 1rem;
+  padding-left: 20px;
+}
+
+.img-date {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 125%;
+  letter-spacing: -0.5%;
+  color: #84829a;
+  margin-top: 0.6rem;
+  padding-left: 20px;
+}
+
+/* the three icons on the bigger card */
+
+.img-icns {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.6rem;
+  padding-left: 20px;
+}
+
+.img-icns img:hover {
+  cursor: grab;
+  box-shadow: 0 6px 12px #151c4f90;
+  border-radius: 50%;
+  transition: 1s;
+}
+
+/* the smaller last section of the small card */
+
+.going-img {
+  margin-top: 1.2rem;
+  padding-left: 20px;
+}
+
+.goingtxt {
+  display: flex;
+  justify-content: end;
+}
+
+.goingtext {
+  margin-top: -20px;
+  padding-right: 220px;
+  padding-bottom: 20px;
+}
+
+.cl4-mini {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* the smallest mini card, which is sitting on the card */
+
+.cl4-mincard {
+  width: 16.44rem;
+  height: 8.3rem;
+  background: #ffffff;
+  box-shadow: 0 0 3px #f8f9fc;
+  border: 1px;
+  border-radius: 30px;
+  position: absolute;
+  overflow: hidden;
+  transition: transform 0.5s ease;
+}
+
+.cl4-mincard:hover {
+  cursor: pointer;
+  scale: calc(1.1);
+  transform: translateX(30px);
+  transition: 1s;
+  box-shadow: 0 20px 30px #5e62826d;
+}
+
+.mincontain {
+  display: flex;
+}
+
+.min-img img {
+  padding: 15px;
+}
+
+/* this section is for the write ups on the smallest mini card inside the bigger card */
+
+.mini-write {
+  padding: 10px;
+}
+
+.mini-write:hover {
+  cursor: pointer;
+}
+
+.minip {
+  font-weight: 400;
+  line-height: 125%;
+  letter-spacing: -3.5%;
+  color: #84829a;
+  margin-bottom: 3px;
+}
+
+.minit {
+  font-weight: 600;
+  line-height: 125%;
+  letter-spacing: 0%;
+  line-height: 125%;
+  margin-bottom: 5px;
+}
+
+/* the write up section of the mini small cards */
+
+#minisc {
+  font-weight: 500;
+  line-height: 100%;
+  margin-bottom: 3px;
+}
+
+#minis {
+  color: #8a79df;
+  line-height: 100%;
+}
+
+/* little love emoji on the small card */
+
+.loveicn {
+  padding: 50px;
+}
+
+.loveicn img {
+  opacity: 1;
+}
+
+.loveicn img:hover {
+  scale: calc(1.2);
+  cursor: pointer;
+}
