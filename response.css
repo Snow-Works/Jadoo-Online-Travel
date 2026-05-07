@@ -1361,16 +1361,18 @@ nav {
     flex-direction: column !important;
     align-items: center !important;
     gap: 3.5rem !important;
-    width: 100% !important;
+    width: 100%  !important;
     transition: 2s ease-in-out;
   } 
 
   .offer-cards1 {
     width: 30% !important;
-    max-width: 400px !important;
+    max-width: 500px !important;
     height: 20rem !important;
     padding-bottom: 1.5rem;
   }
+
+ 
 
   .col-1 #col1-p {
     width: 100%;
@@ -1849,6 +1851,8 @@ nav {
   .hero-content {
     max-width: 360px;
   }
+
+  
 
   .main-img {
     max-width: 380px;
