@@ -308,9 +308,12 @@ nav {
     font-size: 0.85rem;
   }
 
-  .background-stars,
-  .background-vector {
+  .background-stars {
     display: block;
+  }
+
+  .background-vector{
+    display: none;
   }
 
   /* DESTINATION section of the mobile screen sizes */
@@ -859,7 +862,7 @@ nav {
   }
 
   .background-vector {
-    display: block;
+    display: none;
   }
 
   .background-stars {
@@ -1360,7 +1363,7 @@ nav {
     gap: 3.5rem !important;
     width: 100% !important;
     transition: 2s ease-in-out;
-  }
+  } 
 
   .offer-cards1 {
     width: 30% !important;
